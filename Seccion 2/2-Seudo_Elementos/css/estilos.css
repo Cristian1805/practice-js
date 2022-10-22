@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.Menu{
+    background-color: rgb(8, 143, 3);
+    padding: 10px;
+}
+
+.Menu-navegacion{
+    list-style: none;
+    padding-left: 5px;
+    margin: 0px;
+}
+
+.Menu-nav-item{
+    display: inline-block;
+}
+
+.Menu-nav-item a{
+    color: white;
+    text-decoration: none;
+}
+
+/* Seudo clases: Define el estilo de un estado especificamente de un Elemento */
+
+.Menu-nav-item a:hover{ 
+    color: red;
+
+}
+
+.Menu-nav-item a:active{
+    color: blue;
+}
+
+/* Seudo Elementos */
+
+.Menu-nav-item a::after{
+    content: "|";
+}
