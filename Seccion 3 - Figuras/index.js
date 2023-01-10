@@ -1,3 +1,12 @@
+
+//Patron modular, realizado para proteger el codigo desde la manipulacion del DOM
+(()=>{
+
+    let nombre = 'Cristhian';
+    console.log(nombre);
+
+})();
+
 //Funciones que calculen el area y perimetro de un cuadrado
 const valueResult = document.getElementById('result');
 const perimetroCuadrado = (side) => side * 4;
