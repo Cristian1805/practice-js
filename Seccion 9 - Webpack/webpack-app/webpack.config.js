@@ -3,6 +3,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports={
     mode : 'development',
 
+    output: {clean:true},
+
     module: {
         rules : [
             {
@@ -18,11 +20,12 @@ module.exports={
 
     plugins: [
         new HtmlWebpackPlugin({
-            templates: 'src/index.html',
-            title: 'Mi webpack App'
+            template: 'src/index.html',
+            title: 'Mi webpack App',
+            filename: 'index.html'
         })
     ]
 
 
-     
+      
 }
