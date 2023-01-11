@@ -4,12 +4,9 @@
   "description": "Mi aplicacion con webpack",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1", 
+    "build": "webpack"
   },
   "author": "Cristhian Lozano",
-  "license": "ISC",
-  "devDependencies": {
-    "webpack": "^5.75.0",
-    "webpack-cli": "^5.0.1"
-  }
+  "license": "ISC"
 }
