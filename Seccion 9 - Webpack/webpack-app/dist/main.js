@@ -10,13 +10,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/main.css":
+/*!**********************!*\
+  !*** ./src/main.css ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-app/./src/main.css?");
+
+/***/ }),
+
 /***/ "./src/index.js":
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_componentes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/componentes */ \"./src/js/componentes.js\");\n\r\n\r\n\r\n\r\nconst nombre = 'Cristhian Camilo'\r\n;(0,_js_componentes__WEBPACK_IMPORTED_MODULE_0__.saludar) (nombre)\n\n//# sourceURL=webpack://webpack-app/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_componentes__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/componentes */ \"./src/js/componentes.js\");\n/* harmony import */ var _main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./main.css */ \"./src/main.css\");\n\r\n\r\n\r\n\r\n\r\nconst nombre = 'Cristhian Camilo'\r\n;(0,_js_componentes__WEBPACK_IMPORTED_MODULE_0__.saludar) (nombre)\n\n//# sourceURL=webpack://webpack-app/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _js_
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"saludar\": () => (/* binding */ saludar)\n/* harmony export */ });\nconst saludar = (nombre)=>{\r\n    console.log('Creando etiqueta h1')\r\n\r\n\r\n    const h1 = document.createElement('h1')\r\n    h1.innerText = `Hola ${nombre}`\r\n    document.body.append(h1)\r\n}\n\n//# sourceURL=webpack://webpack-app/./src/js/componentes.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"saludar\": () => (/* binding */ saludar)\n/* harmony export */ });\n//import '../css/estilos.css'\r\n\r\n\r\nconst saludar = (nombre)=>{\r\n    console.log('Creando etiqueta h1')\r\n\r\n\r\n    const h1 = document.createElement('h1')\r\n    h1.innerText = `Hola ${nombre}`\r\n    document.body.append(h1)\r\n}\r\n\r\n\n\n//# sourceURL=webpack://webpack-app/./src/js/componentes.js?");
 
 /***/ })
 
