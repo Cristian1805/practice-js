@@ -5,6 +5,14 @@ const User = {
         const users = await Users.find()
         res.status(200).send(users)
     },
+
+
+    create: async (req, res)=>{
+        const user = new Users(req.body)
+        const saveUser = await user.save()
+        res.status(201).send(saveUser._id)
+        //console.log(req.body)
+    }, 
 }
 
 module.exports = User 
