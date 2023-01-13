@@ -17,7 +17,31 @@ const User = {
     get: async (req, res)=>{
         const { id } = req.params
         const user = await Users.findOne({_id: id})
-        res.status(200).send(user)
+        res.status(200).send(user) 
+    },
+
+    update: async (req, res)=>{
+        //obtener id
+        const { id } = req.params
+        const user = await Users.findOne({_id: id})
+
+        //Actualizar datos
+        Object.assign(user, req.body)
+        await user.save()
+        res.sendStatus(204) 
+    },
+
+    delete: async (req, res)=>{
+        //obtener id
+        const { id } = req.params
+        const user = await Users.findOne({_id: id})
+
+        //eliminar datos
+        if(user){
+            user.remove()
+        }
+
+        res.sendStatus(204)
     },
 }
 

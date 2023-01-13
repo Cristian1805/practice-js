@@ -19,8 +19,9 @@ mongoose.connect('mongodb+srv://CristhianLozano:CristhianLozano@cluster0.jbbh5fm
 //Esto es un endpoint
 app.get('/api/', user.list) 
 app.post('/api/', user.create)
-
 app.get('/api/:id', user.get)
+app.put('/api/:id', user.update)
+app.delete('/api/:id', user.delete)
 
 app.listen(port, ()=> {
     console.log(`El ejemplo se esta ejecutando en el puerto ${port}`)
