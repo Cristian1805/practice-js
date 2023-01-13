@@ -20,6 +20,8 @@ mongoose.connect('mongodb+srv://CristhianLozano:CristhianLozano@cluster0.jbbh5fm
 app.get('/api/', user.list) 
 app.post('/api/', user.create)
 
+app.get('/api/:id', user.get)
+
 app.listen(port, ()=> {
     console.log(`El ejemplo se esta ejecutando en el puerto ${port}`)
     console.log('Run in: http://localhost:3000/api')
